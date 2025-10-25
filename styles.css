@@ -110,6 +110,30 @@
             z-index: 10;
         }
 
+        /* Grid layout for displaying multiple podcast cards */
+        .podcast-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        /* Individual podcast card styling */
+        .podcast-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        /* Hover effect for more interactive feel */
+        .podcast-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+
         /* Each clickable item inside dropdown */
         .dropdown-item {
             padding: 10px 16px;
