@@ -23,8 +23,8 @@
             </svg>
             PodcastApp
         </div>
-        
-        <!-- Search and profile icons on the right -->
+
+    <!-- Search and profile icons on the right -->
         <div class="header-right">
             <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="11" cy="11" r="8"/>
@@ -40,3 +40,32 @@
             </svg>
         </div>
     </header>
+
+    <!-- Main content container -->
+        <div class="container">
+
+        <!-- Filter toolbar for sorting and narrowing podcasts -->
+            <div class="filters">
+
+                <!-- Label describing filter options -->
+             <span class="filter-label">Filter by:</span>
+
+             <!-- Dropdown menu for selecting genre -->
+              <div class="filter-group">
+                <select id="genreFilter">
+                    <option>All Genres</option>
+                    <option>Genre 1</option>
+                    <option>Genre 2</option>
+                    <option>Genre 3</option>
+                    <option>Genre 4</option>
+                </select>
+               </div>
+             <!-- Dropdown menu for sorting podcast results -->  
+            <div class="filter-group">
+                <select id="sortFilter">
+                    <option>Recently Updated</option>
+                    <option>Most Popular</option>
+                    <option>Newest First</option>
+                </select>
+            </div>
+        </div>
