@@ -124,6 +124,23 @@
             font-size: 15px;
         }
 
+/* Container for all genre tags in the modal */
+        .modal-genres {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+/* Individual genre tag styling */
+        .modal-tag {
+            padding: 8px 16px;
+            background-color: #f3f4f6;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #374151;
+            font-weight: 500;
+        }
+
         /* Container that separates the season list from other sections */
          .season-list {
             border-top: 1px solid #e5e7eb;
