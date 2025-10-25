@@ -29,6 +29,22 @@
             justify-content: center;
         }
 
+        /* Show modal overlay when active */
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        /* Modal container styling */
+        .modal {
+            background: white;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
         /* Container that separates the season list from other sections */
          .season-list {
             border-top: 1px solid #e5e7eb;
