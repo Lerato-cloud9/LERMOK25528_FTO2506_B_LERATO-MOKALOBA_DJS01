@@ -105,6 +105,25 @@
             margin-bottom: 24px;
         }
 
+/* Each section inside the modal */
+        .modal-section {
+            margin-bottom: 24px;
+        }
+/* Section titles (for, Description, Genres, Seasons) */
+        .modal-section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 12px;
+        }
+
+/* Paragraph text for modal description */
+        .modal-description {
+            color: #6b7280;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
         /* Container that separates the season list from other sections */
          .season-list {
             border-top: 1px solid #e5e7eb;
