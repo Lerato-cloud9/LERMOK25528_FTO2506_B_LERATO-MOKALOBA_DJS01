@@ -45,6 +45,27 @@
             position: relative;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
+
+        /* Modal header containing title and close button */
+        .modal-header {
+            padding: 24px 24px 16px;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky; /* Keep header visible when scrolling modal content */
+            top: 0;
+            background: white;
+            z-index: 1; /* Ensure header stays above modal content */
+        }
+
+        /* Modal title styling */
+        .modal-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+        }
+
         /* Container that separates the season list from other sections */
          .season-list {
             border-top: 1px solid #e5e7eb;
