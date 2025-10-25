@@ -9,3 +9,47 @@
             background-color: #f5f5f5;
             position: relative;
         }
+
+        /* Header container styling */
+        header {
+            background-color: #ffffff;
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+       /* PodcastApp logo container */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* Ensure SVG logo stays consistent in size */
+        .logo svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Icon container on the right side of header */
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        /* Shared icon styles */
+        .search-icon, .profile-icon {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        /* Profile icon larger to stand out more */
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+        }
