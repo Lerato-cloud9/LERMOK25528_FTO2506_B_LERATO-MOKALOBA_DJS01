@@ -10,6 +10,54 @@
             position: relative;
         }
 
+        /* Container that separates the season list from other sections */
+         .season-list {
+            border-top: 1px solid #e5e7eb;
+            padding-top: 16px;
+        }
+
+        /* Individual season item container */
+        .season-item {
+            padding: 16px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        /* Hover effect for interaction */
+        .season-item:hover {
+            background-color: #f9fafb;
+        }
+
+        /* Layout for title and episode count in one row */
+        .season-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+
+        /* Season title */
+        .season-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        /* Secondary text: Count of episodes */
+        .season-count {
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        /* Subtitle like season description or release info */
+        .season-subtitle {
+            font-size: 14px;
+            color: #9ca3af;
+        }
+
         /* Header container styling */
         header {
             background-color: #ffffff;
@@ -110,6 +158,26 @@
             z-index: 10;
         }
 
+        /* Each clickable item inside dropdown */
+        .dropdown-item {
+            padding: 10px 16px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* Hover state for a better visual appearance */
+        .dropdown-item:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Mark the selected/active item */
+        .dropdown-item.active {
+            background-color: #2563eb;
+            color: white;
+            font-weight: 500;
+        }
+
+
         /* Grid layout for displaying multiple podcast cards */
         .podcast-grid {
             display: grid;
@@ -195,74 +263,6 @@
         /* Last updated info text under podcast tags */
         .podcast-updated {
             font-size: 12px;
-            color: #9ca3af;
-        }
-
-        /* Each clickable item inside dropdown */
-        .dropdown-item {
-            padding: 10px 16px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        /* Hover state for a better visual appearance */
-        .dropdown-item:hover {
-            background-color: #f5f5f5;
-        }
-
-        /* Mark the selected/active item */
-        .dropdown-item.active {
-            background-color: #2563eb;
-            color: white;
-            font-weight: 500;
-        }
-
-
-        /* Container that separates the season list from other sections */
-         .season-list {
-            border-top: 1px solid #e5e7eb;
-            padding-top: 16px;
-        }
-
-        /* Individual season item container */
-        .season-item {
-            padding: 16px;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            margin-bottom: 12px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        /* Hover effect for interaction */
-        .season-item:hover {
-            background-color: #f9fafb;
-        }
-
-        /* Layout for title and episode count in one row */
-        .season-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 4px;
-        }
-
-        /* Season title */
-        .season-title {
-            font-size: 16px;
-            font-weight: 600;
-            color: #1f2937;
-        }
-
-        /* Secondary text: Count of episodes */
-        .season-count {
-            font-size: 14px;
-            color: #6b7280;
-        }
-
-        /* Subtitle like season description or release info */
-        .season-subtitle {
-            font-size: 14px;
             color: #9ca3af;
         }
 
