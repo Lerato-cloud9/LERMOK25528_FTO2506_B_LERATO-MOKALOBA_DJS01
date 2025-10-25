@@ -159,6 +159,30 @@
             color: #1f2937;
         }
 
+        /* Meta information row under podcast title (e.g., seasons) */
+        .podcast-meta {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 12px;
+        }
+
+        /* Icon inside metadata row */
+        .podcast-meta svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        /* Tag container for podcast categories */
+        .podcast-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
         /* Each clickable item inside dropdown */
         .dropdown-item {
             padding: 10px 16px;
