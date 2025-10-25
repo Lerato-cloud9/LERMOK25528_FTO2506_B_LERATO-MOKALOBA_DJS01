@@ -133,6 +133,31 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
+        /* Cover image container with a 1:1 square shape */
+        .podcast-cover {
+            width: 100%;
+            aspect-ratio: 1;
+            background-color: #9ca3af;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Container for podcast text details */
+        .podcast-info {
+            padding: 16px;
+        }
+
+        /* Main title of the podcast */
+        .podcast-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1f2937;
+        }
 
         /* Each clickable item inside dropdown */
         .dropdown-item {
