@@ -183,6 +183,21 @@
             margin-bottom: 12px;
         }
 
+        /* Individual tags shown under each podcast (by genres etc..) */
+        .tag {
+            padding: 4px 12px;
+            background-color: #f3f4f6;
+            border-radius: 12px;
+            font-size: 12px;
+            color: #4b5563;
+        }
+
+        /* Last updated info text under podcast tags */
+        .podcast-updated {
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
         /* Each clickable item inside dropdown */
         .dropdown-item {
             padding: 10px 16px;
