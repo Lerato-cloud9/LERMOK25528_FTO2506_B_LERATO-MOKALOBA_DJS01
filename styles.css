@@ -141,6 +141,21 @@
             font-weight: 500;
         }
 
+/* Container for last updated info in the modal */
+        .modal-updated {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        
+/* Calendar icon inside the updated info */
+        .modal-updated svg {
+            width: 16px;
+            height: 16px;
+        }
+
         /* Container that separates the season list from other sections */
          .season-list {
             border-top: 1px solid #e5e7eb;
