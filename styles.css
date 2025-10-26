@@ -39,7 +39,7 @@
             background: white;
             border-radius: 12px;
             width: 90%;
-            max-width: 800px;
+            max-width: 500px;
             max-height: 90vh;
             overflow-y: auto;
             position: relative;
@@ -48,7 +48,7 @@
 
         /* Modal header containing title and close button */
         .modal-header {
-            padding: 24px 24px;
+            padding: 24px 24px 16px;
             border-bottom: 1px solid #e5e7eb;
             display: flex;
             justify-content: space-between;
@@ -70,10 +70,10 @@
         .modal-close {
             background: none;
             border: none;
-            font-size: 28px;
+            font-size: 24px;
             color: #6b7280;
             cursor: pointer;
-            padding: 0px;
+            padding: 4px;
             line-height: 1;
             width: 32px;
             height: 32px;
@@ -89,18 +89,12 @@
 
 /* Container for all modal content */
         .modal-content {
-            padding: 32px;
-        }
-
-        .modal-top-section {
-            display: flex;
-            gap: 32px;
-            margin-bottom: 48px;
+            padding: 24px;
         }
 /* Large cover image inside modal */
         .modal-cover {
-            width: 230px;
-            height: 230px;
+            width: 250px;
+            height: 250px;
             background-color: #9ca3af;
             border-radius: 8px;
             display: flex;
@@ -108,21 +102,17 @@
             justify-content: center;
             color: white;
             font-weight: 500;
-            flex-shrink: 0;
-        }
-
-        .modal-details {
-            flex: 1;
+            margin-bottom: 24px;
         }
 
 /* Each section inside the modal */
         .modal-section {
-            margin-bottom: 28px;
+            margin-bottom: 24px;
         }
 /* Section titles (for, Description, Genres, Seasons) */
         .modal-section-title {
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 18px;
+            font-weight: 600;
             color: #1f2937;
             margin-bottom: 12px;
         }
@@ -137,13 +127,13 @@
 /* Container for all genre tags in the modal */
         .modal-genres {
             display: flex;
-            gap: 12px;
+            gap: 8px;
             flex-wrap: wrap;
         }
 
 /* Individual genre tag styling */
         .modal-tag {
-            padding: 6px 16px;
+            padding: 8px 16px;
             background-color: #f3f4f6;
             border-radius: 6px;
             font-size: 14px;
@@ -174,17 +164,17 @@
 
         /* Individual season item container */
         .season-item {
-            padding: 20px 24px;
+            padding: 16px;
             border: 1px solid #e5e7eb;
             border-radius: 8px;
+            margin-bottom: 12px;
             cursor: pointer;
-            transition: background-color 0.2s, border-color 0.2s;
+            transition: background-color 0.2s;
         }
 
         /* Hover effect for interaction */
         .season-item:hover {
             background-color: #f9fafb;
-            border-color: #d1d5db;
         }
 
         /* Layout for title and episode count in one row */
@@ -192,7 +182,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         /* Season title */
