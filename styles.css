@@ -84,7 +84,7 @@
         }
 /* Hover effect for modal close button */
         .modal-close:hover {
-            background-color: #6b7280;
+            background-color: #c0cadf;
         }
 
 /* Container for all modal content */
@@ -233,7 +233,8 @@
         /* Subtitle like season description or release info */
         .season-subtitle {
             font-size: 14px;
-            color: #9ca3af;
+            color: #73767a;
+            font-weight: 500;
         }
 
         /* Header container styling */
