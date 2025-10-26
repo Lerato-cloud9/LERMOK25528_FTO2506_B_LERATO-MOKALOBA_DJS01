@@ -1,11 +1,6 @@
 /**
  * Opens the podcast details modal and dynamically updates content
- * @param {string} title - Title of the podcast
- * @param {number} seasons - Number of seasons (not yet used)
- * @param {Array<string>} tags - Genres/categories for the podcast
- * @param {string} updated - Last updated date text
  */
-
 function openModal(title, seasons, tags, updated) {
             document.getElementById('modalPodcastTitle').textContent = title;  // Set the modal title text
             document.getElementById('modalUpdated').textContent = 'Last updated: ' + updated; // Update the "Last updated" field with provided date
@@ -31,6 +26,11 @@ function closeModal() {
                 closeModal();
             }
         });
+
+        /**
+ * Close modal when pressing the X icon
+ */
+        document.querySelector('.modal-close').addEventListener('click', closeModal);
 
         document.querySelectorAll('.podcast-card').forEach(card => {    // Loop through all podcast cards and add click functionality
             card.addEventListener('click', function() {
