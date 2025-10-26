@@ -67,3 +67,58 @@ Make sure to dive into the wireframe reference images folder for guidance on how
 
 - A fully functional, responsive podcast preview web application.
 - Clean, well-commented source code (HTML, CSS, JS).
+
+
+
+🎙️ Podcast Webpage Project
+
+🎯 What I Built
+I created a single-page web application that shows podcasts in a grid layout. When you click on any podcast, a modal pops up with all the details. It's fully responsive on all screens like desktop, tablet, and mobile.
+
+✨ Features I Implemented
+
+Responsive Grid: The layout adjusts from 4 columns on desktop down to 1 column on mobile
+Filter Dropdowns: Added genre and sorting filters in the header 
+Interactive Cards: Each podcast card has hover effects and opens a detailed modal on click
+Clean Modal Design: Shows the podcast cover, description, genres, last updated date, and all seasons
+Use Mobile-First Approach: Everything works smoothly across all screen sizes
+
+🛠️ Tech Stack
+Technologies used:
+
+HTML5 for structure
+CSS3 for styling (flexbox and grid)
+Vanilla JavaScript for interactivity(Modal)
+
+The Modal
+Here's how it works:
+
+HTML Structure: Modal is always in the DOM but hidden with display: none
+JavaScript Click Handler: When you click a podcast card, it:
+
+Extracts the data (title, genres, seasons, etc.)
+Populates the modal with that data
+Adds the active class to show the modal
+Prevents body scrolling with modal-open class
+
+
+Closing: Multiple ways to close:
+
+Click the X button
+Click outside the modal (on the overlay)
+
+
+🚀 How to Use My Project:
+
+Main Grid: Scroll through all available podcasts
+Click a Card: Opens the modal with full podcast details
+Close Modal: Click the X button, or click outside the modal
+
+🎯 Goal of This Project
+
+The goal is to practice:
+
+✅ DOM manipulation
+✅ Event listeners
+✅ Responsive grid layouts
+✅ UI/UX design for modals
