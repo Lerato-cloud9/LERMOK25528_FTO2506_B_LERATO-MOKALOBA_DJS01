@@ -39,7 +39,7 @@
             background: white;
             border-radius: 12px;
             width: 90%;
-            max-width: 500px;
+            max-width: 800px;
             max-height: 90vh;
             overflow-y: auto;
             position: relative;
@@ -48,7 +48,7 @@
 
         /* Modal header containing title and close button */
         .modal-header {
-            padding: 24px 24px 16px;
+            padding: 24px 24px;
             border-bottom: 1px solid #e5e7eb;
             display: flex;
             justify-content: space-between;
@@ -61,7 +61,7 @@
 
         /* Modal title styling */
         .modal-title {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 700;
             color: #1f2937;
         }
@@ -70,10 +70,10 @@
         .modal-close {
             background: none;
             border: none;
-            font-size: 24px;
+            font-size: 28px;
             color: #6b7280;
             cursor: pointer;
-            padding: 4px;
+            padding: 0px;
             line-height: 1;
             width: 32px;
             height: 32px;
@@ -84,17 +84,24 @@
         }
 /* Hover effect for modal close button */
         .modal-close:hover {
-            background-color: #f3f4f6;
+            background-color: #6b7280;
         }
 
 /* Container for all modal content */
         .modal-content {
-            padding: 24px;
+            padding: 32px;
         }
+
+        .modal-top-section {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
 /* Large cover image inside modal */
         .modal-cover {
-            width: 250px;
-            height: 250px;
+            width: 230px;
+            height: 230px;
             background-color: #9ca3af;
             border-radius: 8px;
             display: flex;
@@ -102,17 +109,35 @@
             justify-content: center;
             color: white;
             font-weight: 500;
-            margin-bottom: 24px;
+            flex-shrink: 0;
+        }
+
+        .modal-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (max-width: 768px) {
+            .modal-top-section {
+                flex-direction: column;
+            }
+
+            .modal-cover {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1;
+            }
         }
 
 /* Each section inside the modal */
         .modal-section {
-            margin-bottom: 24px;
+            margin-bottom: 28px;
         }
 /* Section titles (for, Description, Genres, Seasons) */
         .modal-section-title {
-            font-size: 18px;
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: 700;
             color: #1f2937;
             margin-bottom: 12px;
         }
@@ -127,15 +152,15 @@
 /* Container for all genre tags in the modal */
         .modal-genres {
             display: flex;
-            gap: 8px;
+            gap: 12px;
             flex-wrap: wrap;
         }
 
 /* Individual genre tag styling */
         .modal-tag {
-            padding: 8px 16px;
+            padding: 6px 16px;
             background-color: #f3f4f6;
-            border-radius: 6px;
+            border-radius: 4px;
             font-size: 14px;
             color: #374151;
             font-weight: 500;
@@ -156,25 +181,31 @@
             height: 16px;
         }
 
-        /* Container that separates the season list from other sections */
-         .season-list {
+        .seasons-section {
             border-top: 1px solid #e5e7eb;
-            padding-top: 16px;
+            padding-top: 32px;
+        }
+
+        /* Container that separates the season list from other sections */
+        .season-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }
 
         /* Individual season item container */
         .season-item {
-            padding: 16px;
+            padding: 20px 24px;
             border: 1px solid #e5e7eb;
             border-radius: 8px;
-            margin-bottom: 12px;
             cursor: pointer;
-            transition: background-color 0.2s;
+            transition: background-color 0.2s, border-color 0.2s;
         }
 
         /* Hover effect for interaction */
         .season-item:hover {
             background-color: #f9fafb;
+            border-color: #d1d5db;
         }
 
         /* Layout for title and episode count in one row */
@@ -182,7 +213,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
         }
 
         /* Season title */
@@ -190,6 +221,7 @@
             font-size: 16px;
             font-weight: 600;
             color: #1f2937;
+            margin-bottom: 24px;
         }
 
         /* Secondary text: Count of episodes */
