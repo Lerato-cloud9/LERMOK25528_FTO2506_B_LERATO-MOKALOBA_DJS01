@@ -349,14 +349,17 @@
 
         /* Cover image container with a 1:1 square shape */
         .podcast-cover {
-            width: 100%;
+            width: 90%;
+            margin: auto;
+            margin-top: 16px;
+            border-radius: 15px;
             aspect-ratio: 1;
             background-color: #9ca3af;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 14px;
+            font-size: 18px;
             font-weight: 500;
         }
 
